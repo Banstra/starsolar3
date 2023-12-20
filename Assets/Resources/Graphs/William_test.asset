@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a2ef5589ae749c6b7f83e5b11c4de96, type: 3}
+  m_Name: William_test
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: d9977564-5ce6-4115-bd26-115138b5a06f
+    PortName: Next
+    TargetNodeGuid: 82d6afc1-e8e2-4802-ac1d-ab1599775ca4
+  - BaseNodeGuid: 82d6afc1-e8e2-4802-ac1d-ab1599775ca4
+    PortName: Next Dialog
+    TargetNodeGuid: fc3156b6-cde3-43eb-b4ab-251ebd049536
+  - BaseNodeGuid: fc3156b6-cde3-43eb-b4ab-251ebd049536
+    PortName: Next Dialog
+    TargetNodeGuid: f01a0679-c447-4561-91e8-c31e0bbd04c4
+  - BaseNodeGuid: f01a0679-c447-4561-91e8-c31e0bbd04c4
+    PortName: Quack
+    TargetNodeGuid: 49cc5dd9-4e6e-44e8-bb2b-97602608eb26
+  - BaseNodeGuid: f01a0679-c447-4561-91e8-c31e0bbd04c4
+    PortName: Yes
+    TargetNodeGuid: 7de400dd-f7e0-4f69-af91-ec7711b7046e
+  DialogNodes:
+  - Guid: 82d6afc1-e8e2-4802-ac1d-ab1599775ca4
+    Content:
+      characterID: 1
+      emotion: 0
+      DialogText: Hi-!
+    Position: {x: 247, y: 170}
+    Type: 1
+    Choices:
+    - Next Dialog
+  - Guid: fc3156b6-cde3-43eb-b4ab-251ebd049536
+    Content:
+      characterID: 1
+      emotion: 0
+      DialogText: Oh?
+    Position: {x: 553, y: 170}
+    Type: 1
+    Choices:
+    - Next Dialog
+  - Guid: f01a0679-c447-4561-91e8-c31e0bbd04c4
+    Content:
+      characterID: 1
+      emotion: 0
+      DialogText: Can you talk?
+    Position: {x: 854, y: 117}
+    Type: 2
+    Choices:
+    - Quack
+    - Yes
+  - Guid: 49cc5dd9-4e6e-44e8-bb2b-97602608eb26
+    Content:
+      characterID: 1
+      emotion: 0
+      DialogText: ok
+    Position: {x: 1293, y: 35}
+    Type: 1
+    Choices:
+    - Next Dialog
+  - Guid: 7de400dd-f7e0-4f69-af91-ec7711b7046e
+    Content:
+      characterID: 1
+      emotion: 0
+      DialogText: God help me
+    Position: {x: 1293, y: 247}
+    Type: 2
+    Choices:
+    - New Choice 0
